@@ -1,7 +1,7 @@
 #!/bin/bash
-if [ $MODE = "DEVE" ]
-  then
-      java -jar calculator-1.0-SNAPSHOT-jar-with-dependencies.jar < input.txt
+
+if [ "$MODE" = "DEVE" ]; then
+    java -jar app.jar < input.txt
 else
-      java -jar calculator-1.0-SNAPSHOT-jar-with-dependencies.jar
+    java -jar app.jar
 fi
