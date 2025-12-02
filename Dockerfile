@@ -1,7 +1,7 @@
 FROM eclipse-temurin:8-jre
 ENV MODE="DEVE"
 
-# Copy jar (remove leading slash!)
+# Copy the jar and rename it to a stable name
 COPY target/calculator-1.0-SNAPSHOT-jar-with-dependencies.jar app.jar
 
 COPY input.txt .
